@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CHIT CHAT APP</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="App Logo" />
+      <span>CHIT CHAT SITE</span>
+    </div>
+    <button class="dark-toggle" onclick="toggleDarkMode()">🌓</button>
+  </header>
+
+  <div class="container">
+
+    <aside class="sidebar left" id="leftMenu">
+      <button onclick="toggleSidebar()">☰</button>
+
+      <div class="chat-list">
+
+        <div class="chat-user online" onclick="selectChat('Somu', this)">
+          <div class="avatar">SO<span class="online-indicator"></span></div>
+          <div><strong>Somu</strong><p>Just finished the task.</p></div>
+        </div>
+
+        <div class="chat-user online" onclick="selectChat('Akanksha', this)">
+          <div class="avatar">AK<span class="online-indicator"></span></div>
+          <div><strong>Akanksha</strong><p>Reviewing the document now.</p></div>
+        </div>
+
+        <div class="chat-user" onclick="selectChat('Salmon', this)">
+          <div class="avatar">SA<span class="online-indicator"></span></div>
+          <div><strong>Salmon</strong><p>Will reply after the call.</p></div>
+        </div>
+
+        <div class="chat-user online" onclick="selectChat('Pramila', this)">
+          <div class="avatar">PR<span class="online-indicator"></span></div>
+          <div><strong>Pramila</strong><p>Sounds good to me.</p></div>
+        </div>
+
+        <div class="chat-user" onclick="selectChat('Diva', this)">
+          <div class="avatar">DI<span class="online-indicator"></span></div>
+          <div><strong>Diva</strong><p>Let’s sync later today.</p></div>
+        </div>
+
+        <div class="chat-user online" onclick="selectChat('Vijay', this)">
+          <div class="avatar">VI<span class="online-indicator"></span></div>
+          <div><strong>Vijay</strong><p>Meeting at 3 PM?</p></div>
+        </div>
+
+        <div class="chat-user" onclick="selectChat('Arjun', this)">
+          <div class="avatar">AR<span class="online-indicator"></span></div>
+          <div><strong>Arjun</strong><p>Updated the file.</p></div>
+        </div>
+
+        <div class="chat-user" onclick="selectChat('Ali', this)">
+          <div class="avatar">AL<span class="online-indicator"></span></div>
+          <div><strong>Ali</strong><p>Give me 10 mins.</p></div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="chat-section">
+
+      <div class="chat-header">
+        <div class="avatar" id="chatAvatar">CB</div>
+        <h2 id="chatWith">ChatBot</h2>
+      </div>
+
+      <div class="chat-area" id="chatArea"></div>
+
+      <div class="chat-input">
+        <textarea id="messageInput" placeholder="Type a message..."></textarea>
+        <button onclick="sendMessage()">Send</button>
+      </div>
+
+    </main>
+  </div>
+
+  <footer class="footer">© 2025 Chat Site</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
