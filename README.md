@@ -20,7 +20,7 @@ A responsive web-based chat interface built using HTML, CSS, and JavaScript. Fea
 
 ## 🖼️ Preview
 
-![Chat UI Screenshot](screenshot.png) <!-- Replace with actual screenshot path -->
+![Chat UI Screenshot](uidemo.png) <!-- Replace with actual screenshot path -->
 
 ---
 
